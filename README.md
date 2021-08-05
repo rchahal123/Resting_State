@@ -1,0 +1,2 @@
+# Resting_State
+These files take fMRIPrep preprocessed resting-state data and conduct post-processing steps, including 1) prepping nuisance regressors and motion outliers files, 2) trimming resting-state data, and 3) using 3dTproject to conduct simultaneous bandpass (25 regressors) and nuisance regression, 2mm smoothing, and motion censoring via interpolation. To change regressors, edit the .R script. This was used on T2 data in the ELS sample in the SNAP Lab at Stanford.
