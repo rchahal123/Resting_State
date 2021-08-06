@@ -5,15 +5,17 @@
 
 # This script completes the following steps: 
 # Prepare confound regressors file which includes the following
-# aCompCors 0-5 (=6)
-# FD (=1)
+# WM (mean, deriv, power2, and deriv_power2 = 4)
+# CSF (mean, deriv, power2, and deriv_power2 = 4)
 # Trans (x,y,z = 3)
 # Rot (x,y,z, =3)
 # Trans deriv (=3)
 # Rot deriv (=3)
 # Trans power 2 (=3)
 # Rot power 2 (=3)
-# == 25 total regressors 
+# Trans deriv_power2 (=3)
+# Rot deriv_power2 (=3)
+# == 32 total regressors 
 
 # 2) Prepare motion outliers file: Use 1dcat to select the column of volumes that were motion outliers (>5.mm) from confound_regressors.tsv file. The column index is 132 (motion_outlier00 = FD spikes). However, this file is in format 0=fine, 1=outlier. This script (by calling the R script) switches to 0=exclude, 1=keep for 3dTproject.
 

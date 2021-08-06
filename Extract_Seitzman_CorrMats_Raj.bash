@@ -37,6 +37,7 @@ mni="$scriptdir"/MNI152_T1_2mm_brain.nii.gz
 rm -f "$findir"/*_seitzman_timeseries.csv
 rm -f "$findir"/*_seitzman_corrmat.csv
 rm -f "$findir"/*_in_mni.nii.gz
+rm -f "$restdir"/rest_postproc_mni.nii.gz
 
 echo "Transforming "$subjdate" postprocessed rest to MNI space"
 # Transform postprocessed file to MNI space
